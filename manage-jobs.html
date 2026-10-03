@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartRecruit | Manage Jobs</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard-page">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="dashboard-logo">
+                <span>Smart</span>Recruit
+            </div>
+
+
+            <div class="sidebar-role">
+                👨‍💼
+                <span>Recruiter Panel</span>
+            </div>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="recruiter-dashboard.html" class="nav-item">
+                    <span>▦</span>
+                    Dashboard
+                </a>
+
+                <a href="manage-jobs.html" class="nav-item active">
+                    <span>💼</span>
+                    Manage Jobs
+                </a>
+
+            <a href="applications.html" class="nav-item">
+                 <span>📄</span>
+                      Applications
+            </a>
+
+                <a href="#" class="nav-item">
+                    <span>📅</span>
+                    Interviews
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>👤</span>
+                    Profile
+                </a>
+
+            </nav>
+
+
+            <div class="sidebar-bottom">
+
+                <a href="index.html" class="logout-link">
+                    <span>↪</span>
+                    Logout
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="dashboard-main">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <p class="dashboard-small-text">
+                        Recruitment Management
+                    </p>
+
+                    <h1>
+                        Manage Jobs
+                    </h1>
+
+                    <p class="dashboard-subtitle">
+                        Create and manage your job openings.
+                    </p>
+
+                </div>
+
+
+                <div class="recruiter-profile">
+
+                    <div class="profile-avatar">
+                        R
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Recruiter
+                        </h3>
+
+                        <p>
+                            HR Manager
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- JOB ACTION BAR -->
+
+            <section class="job-toolbar">
+
+                <div>
+
+                    <h2>
+                        Job Openings
+                    </h2>
+
+                    <p>
+                        Manage all your current job postings
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="add-job-btn"
+                    onclick="document.getElementById('job-form').style.display='block'">
+
+                    + Post New Job
+
+                </button>
+
+            </section>
+
+
+
+            <!-- ADD JOB FORM -->
+
+            <section
+                class="dashboard-section job-form-section"
+                id="job-form"
+                style="display: none;">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Create New Job
+                        </h2>
+
+                        <p>
+                            Add details about the new job opening
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <form class="job-form">
+
+
+                    <div class="form-row">
+
+                        <div class="input-group">
+
+                            <label>
+                                Job Title
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="e.g. Java Developer"
+                                required>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>
+                                Department
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="e.g. Software Development"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="input-group">
+
+                            <label>
+                                Location
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="e.g. Mumbai"
+                                required>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>
+                                Employment Type
+                            </label>
+
+                            <select required>
+
+                                <option value="">
+                                    Select type
+                                </option>
+
+                                <option>
+                                    Full Time
+                                </option>
+
+                                <option>
+                                    Part Time
+                                </option>
+
+                                <option>
+                                    Internship
+                                </option>
+
+                                <option>
+                                    Contract
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="input-group">
+
+                            <label>
+                                Salary
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="e.g. ₹6 - ₹8 LPA">
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>
+                                Required Skills
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="Java, SQL, HTML, CSS"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Job Description
+                        </label>
+
+                        <textarea
+                            placeholder="Enter job description..."
+                            rows="5"
+                            required></textarea>
+
+                    </div>
+
+
+                    <div class="job-form-actions">
+
+                        <button
+                            type="button"
+                            class="cancel-btn"
+                            onclick="document.getElementById('job-form').style.display='none'">
+
+                            Cancel
+
+                        </button>
+
+                        <button
+                            type="submit"
+                            class="add-job-btn">
+
+                            Publish Job
+
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+            </section>
+
+
+
+            <!-- JOB LIST -->
+
+            <section class="dashboard-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Posted Jobs
+                        </h2>
+
+                        <p>
+                            Your current job openings
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="jobs-list">
+
+
+                    <!-- JOB 1 -->
+
+                    <div class="job-card">
+
+                        <div class="job-main">
+
+                            <div class="job-icon">
+                                JD
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Java Developer
+                                </h3>
+
+                                <p>
+                                    Tech Solutions Pvt. Ltd.
+                                </p>
+
+                                <div class="job-details">
+
+                                    <span>
+                                        📍 Mumbai
+                                    </span>
+
+                                    <span>
+                                        💼 Full Time
+                                    </span>
+
+                                    <span>
+                                        ₹6 - ₹8 LPA
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="job-right">
+
+                            <span class="job-status active-job">
+                                Active
+                            </span>
+
+                            <p>
+                                24 Applications
+                            </p>
+
+                            <div class="job-actions">
+
+                                <button>
+                                    Edit
+                                </button>
+
+                                <button>
+                                    Delete
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- JOB 2 -->
+
+                    <div class="job-card">
+
+                        <div class="job-main">
+
+                            <div class="job-icon">
+                                WD
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Web Developer
+                                </h3>
+
+                                <p>
+                                    Tech Solutions Pvt. Ltd.
+                                </p>
+
+                                <div class="job-details">
+
+                                    <span>
+                                        📍 Pune
+                                    </span>
+
+                                    <span>
+                                        💼 Full Time
+                                    </span>
+
+                                    <span>
+                                        ₹5 - ₹7 LPA
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="job-right">
+
+                            <span class="job-status active-job">
+                                Active
+                            </span>
+
+                            <p>
+                                18 Applications
+                            </p>
+
+                            <div class="job-actions">
+
+                                <button>
+                                    Edit
+                                </button>
+
+                                <button>
+                                    Delete
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- JOB 3 -->
+
+                    <div class="job-card">
+
+                        <div class="job-main">
+
+                            <div class="job-icon">
+                                UI
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    UI/UX Designer
+                                </h3>
+
+                                <p>
+                                    Tech Solutions Pvt. Ltd.
+                                </p>
+
+                                <div class="job-details">
+
+                                    <span>
+                                        📍 Remote
+                                    </span>
+
+                                    <span>
+                                        💼 Full Time
+                                    </span>
+
+                                    <span>
+                                        ₹4 - ₹6 LPA
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="job-right">
+
+                            <span class="job-status active-job">
+                                Active
+                            </span>
+
+                            <p>
+                                12 Applications
+                            </p>
+
+                            <div class="job-actions">
+
+                                <button>
+                                    Edit
+                                </button>
+
+                                <button>
+                                    Delete
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

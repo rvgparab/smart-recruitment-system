@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartRecruit | My Profile</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard-page">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="dashboard-logo">
+            <span>Smart</span>Recruit
+        </div>
+
+        <div class="sidebar-role">
+            Candidate Panel
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="candidate-dashboard.html" class="nav-item">
+                <span>📊</span>
+                Dashboard
+            </a>
+
+            <a href="browse-jobs.html" class="nav-item">
+                <span>💼</span>
+                Browse Jobs
+            </a>
+
+            <a href="my-applications.html" class="nav-item">
+                <span>📄</span>
+                My Applications
+            </a>
+
+            <a href="candidate-profile.html" class="nav-item active">
+                <span>👤</span>
+                My Profile
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="index.html" class="logout-link">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+
+        <!-- HEADER -->
+        <div class="dashboard-header">
+
+            <div>
+                <h1>My Profile</h1>
+
+                <p class="dashboard-subtitle">
+                    Manage your personal and professional information
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- PROFILE HEADER -->
+        <section class="candidate-profile-header">
+
+            <div class="candidate-avatar">
+                AS
+            </div>
+
+            <div class="candidate-profile-title">
+
+                <h2>Ananya Sharma</h2>
+
+                <p>Computer Engineering Student</p>
+
+                <span>
+                    📍 Mumbai, Maharashtra
+                </span>
+
+            </div>
+
+            <div class="profile-completion">
+
+                <small>Profile Completion</small>
+
+                <strong>85%</strong>
+
+                <div class="completion-bar">
+                    <div></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PERSONAL INFORMATION -->
+        <section class="dashboard-section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Personal Information</h2>
+
+                    <p>
+                        Update your basic contact information
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="profile-form">
+
+                <div class="profile-field">
+
+                    <label>Full Name</label>
+
+                    <input
+                        type="text"
+                        value="Ananya Sharma"
+                    >
+
+                </div>
+
+
+                <div class="profile-field">
+
+                    <label>Email Address</label>
+
+                    <input
+                        type="email"
+                        value="ananya@gmail.com"
+                    >
+
+                </div>
+
+
+                <div class="profile-field">
+
+                    <label>Phone Number</label>
+
+                    <input
+                        type="tel"
+                        value="+91 98765 43210"
+                    >
+
+                </div>
+
+
+                <div class="profile-field">
+
+                    <label>Location</label>
+
+                    <input
+                        type="text"
+                        value="Mumbai, Maharashtra"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDUCATION -->
+        <section class="dashboard-section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Education</h2>
+
+                    <p>
+                        Add your educational qualifications
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="profile-form">
+
+                <div class="profile-field">
+
+                    <label>Degree</label>
+
+                    <input
+                        type="text"
+                        value="B.E. Computer Engineering"
+                    >
+
+                </div>
+
+
+                <div class="profile-field">
+
+                    <label>University / College</label>
+
+                    <input
+                        type="text"
+                        value="Mumbai University"
+                    >
+
+                </div>
+
+
+                <div class="profile-field">
+
+                    <label>Graduation Year</label>
+
+                    <input
+                        type="number"
+                        value="2027"
+                    >
+
+                </div>
+
+
+                <div class="profile-field">
+
+                    <label>CGPA / Percentage</label>
+
+                    <input
+                        type="text"
+                        value="8.9 CGPA"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPERIENCE -->
+        <section class="dashboard-section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Experience</h2>
+
+                    <p>
+                        Add your work experience and internships
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="profile-form">
+
+                <div class="profile-field">
+
+                    <label>Job Title</label>
+
+                    <input
+                        type="text"
+                        placeholder="e.g. Software Development Intern"
+                    >
+
+                </div>
+
+
+                <div class="profile-field">
+
+                    <label>Company</label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter company name"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-field profile-full-field">
+
+                <label>Experience Description</label>
+
+                <textarea
+                    rows="5"
+                    placeholder="Describe your responsibilities, projects and achievements..."
+                ></textarea>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section class="dashboard-section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Skills</h2>
+
+                    <p>
+                        Add technical skills to improve job matching
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="profile-field">
+
+                <label>Technical Skills</label>
+
+                <input
+                    type="text"
+                    value="Java, SQL, HTML, CSS, JavaScript, Spring Boot, Git"
+                    placeholder="Enter skills separated by commas"
+                >
+
+            </div>
+
+
+            <div class="skills-preview">
+
+                <span>Java</span>
+                <span>SQL</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Spring Boot</span>
+                <span>Git</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESUME -->
+        <section class="dashboard-section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Resume</h2>
+
+                    <p>
+                        Upload your latest resume
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="profile-resume">
+
+                <div class="profile-resume-icon">
+                    📄
+                </div>
+
+                <div>
+
+                    <h3>Ananya_Sharma_Resume.pdf</h3>
+
+                    <p>
+                        Uploaded on 28 Sep 2026 • 1.2 MB
+                    </p>
+
+                </div>
+
+
+                <label class="profile-upload-btn">
+
+                    Replace Resume
+
+                    <input
+                        type="file"
+                        accept=".pdf,.doc,.docx"
+                    >
+
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <!-- PREFERENCES -->
+        <section class="dashboard-section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Job Preferences</h2>
+
+                    <p>
+                        Tell us what kind of opportunities you are looking for
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="profile-form">
+
+                <div class="profile-field">
+
+                    <label>Preferred Job Type</label>
+
+                    <select>
+                        <option selected>Full Time</option>
+                        <option>Part Time</option>
+                        <option>Internship</option>
+                        <option>Contract</option>
+                    </select>
+
+                </div>
+
+
+                <div class="profile-field">
+
+                    <label>Preferred Location</label>
+
+                    <input
+                        type="text"
+                        value="Mumbai / Remote"
+                    >
+
+                </div>
+
+
+                <div class="profile-field">
+
+                    <label>Expected Salary</label>
+
+                    <input
+                        type="text"
+                        value="₹6 - 9 LPA"
+                    >
+
+                </div>
+
+
+                <div class="profile-field">
+
+                    <label>Preferred Role</label>
+
+                    <input
+                        type="text"
+                        value="Software Developer"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACTION BUTTONS -->
+        <div class="profile-actions">
+
+            <button type="button" class="profile-cancel-btn">
+                Cancel
+            </button>
+
+            <button type="button" class="profile-save-btn">
+                Save Changes
+            </button>
+
+        </div>
+
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartRecruit | Applications</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard-page">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="dashboard-logo">
+                <span>Smart</span>Recruit
+            </div>
+
+
+            <div class="sidebar-role">
+                👨‍💼
+                <span>Recruiter Panel</span>
+            </div>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="recruiter-dashboard.html" class="nav-item">
+                    <span>▦</span>
+                    Dashboard
+                </a>
+
+                <a href="manage-jobs.html" class="nav-item">
+                    <span>💼</span>
+                    Manage Jobs
+                </a>
+
+                <a href="applications.html" class="nav-item active">
+                    <span>📄</span>
+                    Applications
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>📅</span>
+                    Interviews
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>👤</span>
+                    Profile
+                </a>
+
+            </nav>
+
+
+            <div class="sidebar-bottom">
+
+                <a href="index.html" class="logout-link">
+                    <span>↪</span>
+                    Logout
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="dashboard-main">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <p class="dashboard-small-text">
+                        Recruitment Management
+                    </p>
+
+                    <h1>
+                        Applications
+                    </h1>
+
+                    <p class="dashboard-subtitle">
+                        Review and manage candidate applications.
+                    </p>
+
+                </div>
+
+
+                <div class="recruiter-profile">
+
+                    <div class="profile-avatar">
+                        R
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Recruiter
+                        </h3>
+
+                        <p>
+                            HR Manager
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- APPLICATION STATS -->
+
+            <section class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        📄
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Total Applications
+                        </p>
+
+                        <h2>
+                            86
+                        </h2>
+
+                        <span class="stat-info">
+                            All applications
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ⏳
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Under Review
+                        </p>
+
+                        <h2>
+                            32
+                        </h2>
+
+                        <span class="stat-info">
+                            Awaiting review
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Shortlisted
+                        </p>
+
+                        <h2>
+                            24
+                        </h2>
+
+                        <span class="stat-info">
+                            Selected candidates
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ✕
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Rejected
+                        </p>
+
+                        <h2>
+                            30
+                        </h2>
+
+                        <span class="stat-info">
+                            Applications rejected
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- APPLICATION SECTION -->
+
+            <section class="dashboard-section">
+
+
+                <!-- HEADER -->
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Candidate Applications
+                        </h2>
+
+                        <p>
+                            Review candidates and their applications
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FILTERS -->
+
+                <div class="application-filters">
+
+                    <input
+                        type="text"
+                        placeholder="Search candidate...">
+
+
+                    <select>
+
+                        <option>
+                            All Jobs
+                        </option>
+
+                        <option>
+                            Java Developer
+                        </option>
+
+                        <option>
+                            Web Developer
+                        </option>
+
+                        <option>
+                            UI/UX Designer
+                        </option>
+
+                    </select>
+
+
+                    <select>
+
+                        <option>
+                            All Status
+                        </option>
+
+                        <option>
+                            Under Review
+                        </option>
+
+                        <option>
+                            Shortlisted
+                        </option>
+
+                        <option>
+                            Rejected
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- APPLICATION TABLE -->
+
+                <div class="application-table">
+
+
+                    <!-- TABLE HEADER -->
+
+                    <div class="application-row application-heading">
+
+                        <div>
+                            Candidate
+                        </div>
+
+                        <div>
+                            Applied For
+                        </div>
+
+                        <div>
+                            Skills
+                        </div>
+
+                        <div>
+                            Match
+                        </div>
+
+                        <div>
+                            Status
+                        </div>
+
+                        <div>
+                            Action
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CANDIDATE 1 -->
+
+                    <div class="application-row">
+
+                        <div class="application-candidate">
+
+                            <div class="candidate-avatar">
+                                AS
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Ananya Sharma
+                                </h3>
+
+                                <p>
+                                    ananya@email.com
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div>
+                            Java Developer
+                        </div>
+
+
+                        <div class="skills">
+
+                            <span>Java</span>
+                            <span>SQL</span>
+                            <span>Spring</span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="match-score high-match">
+                                92%
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="status review">
+                                Under Review
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CANDIDATE 2 -->
+
+                    <div class="application-row">
+
+                        <div class="application-candidate">
+
+                            <div class="candidate-avatar">
+                                RK
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Rahul Kumar
+                                </h3>
+
+                                <p>
+                                    rahul@email.com
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div>
+                            Web Developer
+                        </div>
+
+
+                        <div class="skills">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="match-score high-match">
+                                88%
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="status shortlisted">
+                                Shortlisted
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CANDIDATE 3 -->
+
+                    <div class="application-row">
+
+                        <div class="application-candidate">
+
+                            <div class="candidate-avatar">
+                                PS
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Priya Shah
+                                </h3>
+
+                                <p>
+                                    priya@email.com
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div>
+                            Software Engineer
+                        </div>
+
+
+                        <div class="skills">
+
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>SQL</span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="match-score medium-match">
+                                76%
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="status review">
+                                Under Review
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CANDIDATE 4 -->
+
+                    <div class="application-row">
+
+                        <div class="application-candidate">
+
+                            <div class="candidate-avatar">
+                                VM
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Vikram Mehta
+                                </h3>
+
+                                <p>
+                                    vikram@email.com
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div>
+                            Backend Developer
+                        </div>
+
+
+                        <div class="skills">
+
+                            <span>Java</span>
+                            <span>SQL</span>
+                            <span>Spring</span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="match-score low-match">
+                                61%
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="status rejected">
+                                Rejected
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

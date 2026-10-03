@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartRecruit | Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard-page">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="dashboard-logo">
+            <span>Smart</span>Recruit
+        </div>
+
+        <div class="sidebar-role">
+            Admin Panel
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="admin-dashboard.html" class="nav-item active">
+                <span>📊</span>
+                Dashboard
+            </a>
+
+            <a href="manage-users.html" class="nav-item">
+                <span>👥</span>
+                Manage Users
+            </a>
+
+            <a href="admin-jobs.html" class="nav-item">
+                <span>💼</span>
+                Manage Jobs
+            </a>
+
+            <a href="admin-applications.html" class="nav-item">
+                <span>📄</span>
+                Applications
+            </a>
+
+            <a href="admin-reports.html" class="nav-item">
+                <span>📈</span>
+                Reports
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="index.html" class="logout-link">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+
+
+        <!-- HEADER -->
+        <div class="dashboard-header">
+
+            <div>
+
+                <h1>Admin Dashboard</h1>
+
+                <p class="dashboard-subtitle">
+                    Monitor and manage the recruitment system
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- STAT CARDS -->
+        <section class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    👥
+                </div>
+
+                <div>
+
+                    <p>Total Candidates</p>
+
+                    <h2>248</h2>
+
+                    <span class="stat-change positive">
+                        ↑ 12% this month
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    👨‍💼
+                </div>
+
+                <div>
+
+                    <p>Total Recruiters</p>
+
+                    <h2>42</h2>
+
+                    <span class="stat-change positive">
+                        ↑ 5% this month
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    💼
+                </div>
+
+                <div>
+
+                    <p>Active Jobs</p>
+
+                    <h2>56</h2>
+
+                    <span class="stat-change positive">
+                        ↑ 8% this month
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📄
+                </div>
+
+                <div>
+
+                    <p>Total Applications</p>
+
+                    <h2>1,284</h2>
+
+                    <span class="stat-change positive">
+                        ↑ 18% this month
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- OVERVIEW -->
+        <section class="admin-overview-grid">
+
+
+            <!-- APPLICATION OVERVIEW -->
+            <div class="dashboard-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>Application Overview</h2>
+
+                        <p>
+                            Current application status
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="application-overview">
+
+
+                    <div class="overview-item">
+
+                        <div class="overview-label">
+
+                            <span>Under Review</span>
+
+                            <strong>412</strong>
+
+                        </div>
+
+                        <div class="overview-bar">
+
+                            <div
+                                class="overview-fill review-fill"
+                                style="width: 65%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="overview-item">
+
+                        <div class="overview-label">
+
+                            <span>Shortlisted</span>
+
+                            <strong>286</strong>
+
+                        </div>
+
+                        <div class="overview-bar">
+
+                            <div
+                                class="overview-fill shortlisted-fill"
+                                style="width: 45%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="overview-item">
+
+                        <div class="overview-label">
+
+                            <span>Interviews</span>
+
+                            <strong>154</strong>
+
+                        </div>
+
+                        <div class="overview-bar">
+
+                            <div
+                                class="overview-fill interview-fill"
+                                style="width: 30%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="overview-item">
+
+                        <div class="overview-label">
+
+                            <span>Rejected</span>
+
+                            <strong>432</strong>
+
+                        </div>
+
+                        <div class="overview-bar">
+
+                            <div
+                                class="overview-fill rejected-fill"
+                                style="width: 68%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUICK ACTIONS -->
+            <div class="dashboard-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>Quick Actions</h2>
+
+                        <p>
+                            Manage the platform
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-quick-actions">
+
+
+                    <a href="manage-users.html"
+                       class="admin-action">
+
+                        <span>👥</span>
+
+                        <div>
+
+                            <strong>Manage Users</strong>
+
+                            <small>
+                                View and manage users
+                            </small>
+
+                        </div>
+
+                        <b>→</b>
+
+                    </a>
+
+
+
+                    <a href="admin-jobs.html"
+                       class="admin-action">
+
+                        <span>💼</span>
+
+                        <div>
+
+                            <strong>Manage Jobs</strong>
+
+                            <small>
+                                Review posted jobs
+                            </small>
+
+                        </div>
+
+                        <b>→</b>
+
+                    </a>
+
+
+
+                    <a href="admin-reports.html"
+                       class="admin-action">
+
+                        <span>📈</span>
+
+                        <div>
+
+                            <strong>View Reports</strong>
+
+                            <small>
+                                Recruitment analytics
+                            </small>
+
+                        </div>
+
+                        <b>→</b>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RECENT ACTIVITY -->
+        <section class="dashboard-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>Recent Activity</h2>
+
+                    <p>
+                        Latest activity on the platform
+                    </p>
+
+                </div>
+
+                <a href="admin-reports.html"
+                   class="section-link">
+
+                    View Reports →
+
+                </a>
+
+            </div>
+
+
+            <div class="admin-activity-list">
+
+
+                <div class="admin-activity">
+
+                    <div class="activity-icon">
+                        👤
+                    </div>
+
+                    <div>
+
+                        <h3>New candidate registered</h3>
+
+                        <p>
+                            Riya Patel created a candidate account
+                        </p>
+
+                    </div>
+
+                    <span>
+                        10 min ago
+                    </span>
+
+                </div>
+
+
+
+                <div class="admin-activity">
+
+                    <div class="activity-icon">
+                        💼
+                    </div>
+
+                    <div>
+
+                        <h3>New job posted</h3>
+
+                        <p>
+                            Tech Solutions posted a Java Developer position
+                        </p>
+
+                    </div>
+
+                    <span>
+                        35 min ago
+                    </span>
+
+                </div>
+
+
+
+                <div class="admin-activity">
+
+                    <div class="activity-icon">
+                        👨‍💼
+                    </div>
+
+                    <div>
+
+                        <h3>New recruiter registered</h3>
+
+                        <p>
+                            Neha Kapoor joined as a recruiter
+                        </p>
+
+                    </div>
+
+                    <span>
+                        1 hour ago
+                    </span>
+
+                </div>
+
+
+
+                <div class="admin-activity">
+
+                    <div class="activity-icon">
+                        📄
+                    </div>
+
+                    <div>
+
+                        <h3>Application submitted</h3>
+
+                        <p>
+                            Ananya Sharma applied for Java Developer
+                        </p>
+
+                    </div>
+
+                    <span>
+                        2 hours ago
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- TOP RECRUITERS -->
+        <section class="dashboard-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>Top Recruiters</h2>
+
+                    <p>
+                        Recruiters with the highest hiring activity
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-recruiter-list">
+
+
+                <div class="admin-recruiter-row">
+
+                    <div class="admin-recruiter-avatar">
+                        TS
+                    </div>
+
+                    <div>
+
+                        <h3>Tech Solutions Pvt. Ltd.</h3>
+
+                        <p>
+                            12 Active Jobs
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        48 Hires
+                    </strong>
+
+                </div>
+
+
+
+                <div class="admin-recruiter-row">
+
+                    <div class="admin-recruiter-avatar">
+                        IL
+                    </div>
+
+                    <div>
+
+                        <h3>Innovate Labs</h3>
+
+                        <p>
+                            8 Active Jobs
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        32 Hires
+                    </strong>
+
+                </div>
+
+
+
+                <div class="admin-recruiter-row">
+
+                    <div class="admin-recruiter-avatar">
+                        FI
+                    </div>
+
+                    <div>
+
+                        <h3>FinTech Innovations</h3>
+
+                        <p>
+                            7 Active Jobs
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        27 Hires
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

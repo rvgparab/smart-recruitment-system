@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartRecruit | Manage Users</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard-page">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="dashboard-logo">
+            <span>Smart</span>Recruit
+        </div>
+
+        <div class="sidebar-role">
+            Admin Panel
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="admin-dashboard.html" class="nav-item">
+                <span>📊</span>
+                Dashboard
+            </a>
+
+            <a href="manage-users.html" class="nav-item active">
+                <span>👥</span>
+                Manage Users
+            </a>
+
+            <a href="admin-jobs.html" class="nav-item">
+                <span>💼</span>
+                Manage Jobs
+            </a>
+
+            <a href="admin-applications.html" class="nav-item">
+                <span>📄</span>
+                Applications
+            </a>
+
+            <a href="admin-reports.html" class="nav-item">
+                <span>📈</span>
+                Reports
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="index.html" class="logout-link">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+
+        <!-- HEADER -->
+        <div class="dashboard-header">
+
+            <div>
+
+                <h1>Manage Users</h1>
+
+                <p class="dashboard-subtitle">
+                    Manage candidates and recruiters registered on the platform
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- USER STATS -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    👥
+                </div>
+
+                <div>
+
+                    <p>Total Users</p>
+
+                    <h2>290</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    👩‍💻
+                </div>
+
+                <div>
+
+                    <p>Candidates</p>
+
+                    <h2>248</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    👨‍💼
+                </div>
+
+                <div>
+
+                    <p>Recruiters</p>
+
+                    <h2>42</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🟢
+                </div>
+
+                <div>
+
+                    <p>Active Users</p>
+
+                    <h2>276</h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FILTERS -->
+        <section class="dashboard-section">
+
+            <div class="user-filters">
+
+                <div class="user-search">
+
+                    <span>🔍</span>
+
+                    <input
+                        type="text"
+                        placeholder="Search by name or email..."
+                    >
+
+                </div>
+
+
+                <select>
+
+                    <option selected>All Roles</option>
+
+                    <option>Candidate</option>
+
+                    <option>Recruiter</option>
+
+                </select>
+
+
+                <select>
+
+                    <option selected>All Status</option>
+
+                    <option>Active</option>
+
+                    <option>Inactive</option>
+
+                </select>
+
+
+                <button class="filter-btn">
+                    Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- USERS TABLE -->
+        <section class="dashboard-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>Registered Users</h2>
+
+                    <p>
+                        Manage user accounts and access
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-users-table-wrapper">
+
+                <table class="admin-users-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>User</th>
+
+                            <th>Role</th>
+
+                            <th>Contact</th>
+
+                            <th>Joined</th>
+
+                            <th>Status</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- USER 1 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="admin-user-info">
+
+                                    <div class="admin-user-avatar">
+                                        AS
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Ananya Sharma
+                                        </strong>
+
+                                        <small>
+                                            Candidate
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="user-role candidate-role">
+                                    Candidate
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="user-contact">
+
+                                    <span>
+                                        ananya@gmail.com
+                                    </span>
+
+                                    <small>
+                                        +91 98765 43210
+                                    </small>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                15 Sep 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="user-status active-status">
+                                    Active
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="user-action-btn"
+                                    type="button"
+                                >
+                                    View
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- USER 2 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="admin-user-info">
+
+                                    <div class="admin-user-avatar">
+                                        RK
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Rahul Kumar
+                                        </strong>
+
+                                        <small>
+                                            Candidate
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="user-role candidate-role">
+                                    Candidate
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="user-contact">
+
+                                    <span>
+                                        rahul@gmail.com
+                                    </span>
+
+                                    <small>
+                                        +91 98765 12345
+                                    </small>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                12 Sep 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="user-status active-status">
+                                    Active
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="user-action-btn"
+                                    type="button"
+                                >
+                                    View
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- USER 3 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="admin-user-info">
+
+                                    <div class="admin-user-avatar">
+                                        NP
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Neha Patel
+                                        </strong>
+
+                                        <small>
+                                            Recruiter
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="user-role recruiter-role">
+                                    Recruiter
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="user-contact">
+
+                                    <span>
+                                        neha@techsolutions.com
+                                    </span>
+
+                                    <small>
+                                        +91 99887 66554
+                                    </small>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                10 Sep 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="user-status active-status">
+                                    Active
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="user-action-btn"
+                                    type="button"
+                                >
+                                    View
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- USER 4 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="admin-user-info">
+
+                                    <div class="admin-user-avatar">
+                                        VK
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Vikram Kapoor
+                                        </strong>
+
+                                        <small>
+                                            Recruiter
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="user-role recruiter-role">
+                                    Recruiter
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="user-contact">
+
+                                    <span>
+                                        vikram@innovatelabs.com
+                                    </span>
+
+                                    <small>
+                                        +91 98761 22334
+                                    </small>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                08 Sep 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="user-status active-status">
+                                    Active
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="user-action-btn"
+                                    type="button"
+                                >
+                                    View
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- USER 5 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="admin-user-info">
+
+                                    <div class="admin-user-avatar">
+                                        PS
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Priya Shah
+                                        </strong>
+
+                                        <small>
+                                            Candidate
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="user-role candidate-role">
+                                    Candidate
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="user-contact">
+
+                                    <span>
+                                        priya@gmail.com
+                                    </span>
+
+                                    <small>
+                                        +91 91234 56789
+                                    </small>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                05 Sep 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="user-status inactive-status">
+                                    Inactive
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="user-action-btn"
+                                    type="button"
+                                >
+                                    View
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- PAGINATION -->
+
+            <div class="admin-pagination">
+
+                <span>
+                    Showing 1–5 of 290 users
+                </span>
+
+                <div>
+
+                    <button type="button">
+                        ←
+                    </button>
+
+                    <button
+                        type="button"
+                        class="pagination-active"
+                    >
+                        1
+                    </button>
+
+                    <button type="button">
+                        2
+                    </button>
+
+                    <button type="button">
+                        3
+                    </button>
+
+                    <button type="button">
+                        →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

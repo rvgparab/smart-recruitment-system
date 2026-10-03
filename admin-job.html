@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartRecruit | Manage Jobs</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard-page">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="dashboard-logo">
+            <span>Smart</span>Recruit
+        </div>
+
+        <div class="sidebar-role">
+            Admin Panel
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="admin-dashboard.html" class="nav-item">
+                <span>📊</span>
+                Dashboard
+            </a>
+
+            <a href="manage-users.html" class="nav-item">
+                <span>👥</span>
+                Manage Users
+            </a>
+
+            <a href="admin-jobs.html" class="nav-item active">
+                <span>💼</span>
+                Manage Jobs
+            </a>
+
+            <a href="admin-applications.html" class="nav-item">
+                <span>📄</span>
+                Applications
+            </a>
+
+            <a href="admin-reports.html" class="nav-item">
+                <span>📈</span>
+                Reports
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="index.html" class="logout-link">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+
+
+        <!-- HEADER -->
+        <div class="dashboard-header">
+
+            <div>
+
+                <h1>Manage Jobs</h1>
+
+                <p class="dashboard-subtitle">
+                    Monitor and manage all jobs posted by recruiters
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- STATS -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    💼
+                </div>
+
+                <div>
+
+                    <p>Total Jobs</p>
+
+                    <h2>74</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🟢
+                </div>
+
+                <div>
+
+                    <p>Active Jobs</p>
+
+                    <h2>56</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ⏳
+                </div>
+
+                <div>
+
+                    <p>Pending Review</p>
+
+                    <h2>9</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🔴
+                </div>
+
+                <div>
+
+                    <p>Closed Jobs</p>
+
+                    <h2>9</h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FILTERS -->
+        <section class="dashboard-section">
+
+            <div class="job-admin-filters">
+
+                <div class="job-admin-search">
+
+                    <span>🔍</span>
+
+                    <input
+                        type="text"
+                        placeholder="Search job title or company..."
+                    >
+
+                </div>
+
+
+                <select>
+
+                    <option selected>All Status</option>
+
+                    <option>Active</option>
+
+                    <option>Pending Review</option>
+
+                    <option>Closed</option>
+
+                </select>
+
+
+                <select>
+
+                    <option selected>All Job Types</option>
+
+                    <option>Full Time</option>
+
+                    <option>Part Time</option>
+
+                    <option>Internship</option>
+
+                    <option>Contract</option>
+
+                </select>
+
+
+                <button class="filter-btn">
+                    Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- JOB TABLE -->
+        <section class="dashboard-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>All Job Listings</h2>
+
+                    <p>
+                        Jobs posted by registered recruiters
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-jobs-table-wrapper">
+
+                <table class="admin-jobs-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Job</th>
+
+                            <th>Company</th>
+
+                            <th>Location</th>
+
+                            <th>Type</th>
+
+                            <th>Applications</th>
+
+                            <th>Posted</th>
+
+                            <th>Status</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- JOB 1 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="admin-job-info">
+
+                                    <div class="admin-job-icon">
+                                        💻
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Java Developer
+                                        </strong>
+
+                                        <small>
+                                            JD-1001
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                Tech Solutions Pvt. Ltd.
+                            </td>
+
+
+                            <td>
+                                Mumbai
+                            </td>
+
+
+                            <td>
+                                Full Time
+                            </td>
+
+
+                            <td>
+                                <strong class="application-count">
+                                    86
+                                </strong>
+                            </td>
+
+
+                            <td>
+                                28 Sep 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="job-admin-status active">
+                                    Active
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="job-action-btn"
+                                    type="button"
+                                >
+                                    View
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- JOB 2 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="admin-job-info">
+
+                                    <div class="admin-job-icon">
+                                        🌐
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Web Developer
+                                        </strong>
+
+                                        <small>
+                                            JD-1002
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                Innovate Labs
+                            </td>
+
+
+                            <td>
+                                Mumbai
+                            </td>
+
+
+                            <td>
+                                Full Time
+                            </td>
+
+
+                            <td>
+                                <strong class="application-count">
+                                    64
+                                </strong>
+                            </td>
+
+
+                            <td>
+                                25 Sep 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="job-admin-status active">
+                                    Active
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="job-action-btn"
+                                    type="button"
+                                >
+                                    View
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- JOB 3 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="admin-job-info">
+
+                                    <div class="admin-job-icon">
+                                        👨‍💻
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Software Engineer
+                                        </strong>
+
+                                        <small>
+                                            JD-1003
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                FinTech Innovations
+                            </td>
+
+
+                            <td>
+                                Pune
+                            </td>
+
+
+                            <td>
+                                Full Time
+                            </td>
+
+
+                            <td>
+                                <strong class="application-count">
+                                    51
+                                </strong>
+                            </td>
+
+
+                            <td>
+                                22 Sep 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="job-admin-status pending">
+                                    Pending Review
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="job-action-btn"
+                                    type="button"
+                                >
+                                    Review
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- JOB 4 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="admin-job-info">
+
+                                    <div class="admin-job-icon">
+                                        🎨
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            UI/UX Designer
+                                        </strong>
+
+                                        <small>
+                                            JD-1004
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                Creative Minds
+                            </td>
+
+
+                            <td>
+                                Remote
+                            </td>
+
+
+                            <td>
+                                Full Time
+                            </td>
+
+
+                            <td>
+                                <strong class="application-count">
+                                    39
+                                </strong>
+                            </td>
+
+
+                            <td>
+                                20 Sep 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="job-admin-status active">
+                                    Active
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="job-action-btn"
+                                    type="button"
+                                >
+                                    View
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- JOB 5 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="admin-job-info">
+
+                                    <div class="admin-job-icon">
+                                        ⚛️
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Frontend Developer
+                                        </strong>
+
+                                        <small>
+                                            JD-1005
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                Digital Works
+                            </td>
+
+
+                            <td>
+                                Remote
+                            </td>
+
+
+                            <td>
+                                Internship
+                            </td>
+
+
+                            <td>
+                                <strong class="application-count">
+                                    28
+                                </strong>
+                            </td>
+
+
+                            <td>
+                                18 Sep 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="job-admin-status closed">
+                                    Closed
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="job-action-btn"
+                                    type="button"
+                                >
+                                    View
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- PAGINATION -->
+
+            <div class="admin-pagination">
+
+                <span>
+                    Showing 1–5 of 74 jobs
+                </span>
+
+                <div>
+
+                    <button type="button">
+                        ←
+                    </button>
+
+                    <button
+                        type="button"
+                        class="pagination-active"
+                    >
+                        1
+                    </button>
+
+                    <button type="button">
+                        2
+                    </button>
+
+                    <button type="button">
+                        3
+                    </button>
+
+                    <button type="button">
+                        →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartRecruit | Applications</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                <span>Smart</span>Recruit
+            </div>
+
+            <div class="sidebar-title">
+                Admin Panel
+            </div>
+
+            <nav class="sidebar-nav">
+
+                <a href="admin-dashboard.html" class="nav-item">
+                    <span>📊</span>
+                    Dashboard
+                </a>
+
+                <a href="manage-users.html" class="nav-item">
+                    <span>👥</span>
+                    Manage Users
+                </a>
+
+                <a href="admin-jobs.html" class="nav-item">
+                    <span>💼</span>
+                    Manage Jobs
+                </a>
+
+                <a href="admin-applications.html" class="nav-item active">
+                    <span>📄</span>
+                    Applications
+                </a>
+
+                <a href="admin-reports.html" class="nav-item">
+                    <span>📈</span>
+                    Reports
+                </a>
+
+            </nav>
+
+            <a href="index.html" class="logout">
+                <span>🚪</span>
+                Logout
+            </a>
+
+        </aside>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="main-content">
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+                <div>
+                    <h1>Applications</h1>
+                    <p>Monitor and manage all job applications</p>
+                </div>
+
+                <div class="admin-profile">
+                    <div class="profile-avatar">
+                        A
+                    </div>
+
+                    <div>
+                        <strong>Admin</strong>
+                        <span>Administrator</span>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- ================= STATS ================= -->
+
+            <section class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+                        📄
+                    </div>
+
+                    <div>
+                        <p>Total Applications</p>
+                        <h2>1,284</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+                        ⏳
+                    </div>
+
+                    <div>
+                        <p>Under Review</p>
+                        <h2>412</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+                        ✓
+                    </div>
+
+                    <div>
+                        <p>Shortlisted</p>
+                        <h2>286</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+                        📅
+                    </div>
+
+                    <div>
+                        <p>Interviews</p>
+                        <h2>154</h2>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= FILTERS ================= -->
+
+            <section class="content-card">
+
+                <div class="section-header">
+
+                    <div>
+                        <h2>All Applications</h2>
+                        <p>View applications submitted across the platform</p>
+                    </div>
+
+                </div>
+
+
+                <div class="filter-row">
+
+                    <div class="search-box">
+
+                        <span>🔍</span>
+
+                        <input
+                            type="text"
+                            placeholder="Search candidate or job..."
+                        >
+
+                    </div>
+
+
+                    <select>
+
+                        <option>All Status</option>
+                        <option>Under Review</option>
+                        <option>Shortlisted</option>
+                        <option>Interview</option>
+                        <option>Rejected</option>
+
+                    </select>
+
+
+                    <select>
+
+                        <option>All Recruiters</option>
+                        <option>Tech Solutions Pvt. Ltd.</option>
+                        <option>Innovate Labs</option>
+                        <option>FinTech Innovations</option>
+                        <option>Digital Works</option>
+
+                    </select>
+
+
+                    <button class="filter-btn">
+                        Search
+                    </button>
+
+                </div>
+
+
+                <!-- ================= APPLICATION TABLE ================= -->
+
+                <div class="table-container">
+
+                    <table class="data-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Candidate</th>
+
+                                <th>Job</th>
+
+                                <th>Company</th>
+
+                                <th>Match</th>
+
+                                <th>Applied Date</th>
+
+                                <th>Status</th>
+
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="user-cell">
+
+                                        <div class="table-avatar">
+                                            AS
+                                        </div>
+
+                                        <div>
+                                            <strong>Ananya Sharma</strong>
+                                            <span>ananya@email.com</span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Java Developer
+                                </td>
+
+
+                                <td>
+                                    Tech Solutions Pvt. Ltd.
+                                </td>
+
+
+                                <td>
+
+                                    <span class="match-score high">
+                                        92%
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    28 Sep 2026
+                                </td>
+
+
+                                <td>
+
+                                    <span class="status-badge review">
+                                        Under Review
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <a href="candidate-details.html"
+                                       class="view-btn">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="user-cell">
+
+                                        <div class="table-avatar">
+                                            RK
+                                        </div>
+
+                                        <div>
+                                            <strong>Rahul Kumar</strong>
+                                            <span>rahul@email.com</span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Web Developer
+                                </td>
+
+
+                                <td>
+                                    Innovate Labs
+                                </td>
+
+
+                                <td>
+
+                                    <span class="match-score high">
+                                        88%
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    25 Sep 2026
+                                </td>
+
+
+                                <td>
+
+                                    <span class="status-badge shortlisted">
+                                        Shortlisted
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <a href="candidate-details.html"
+                                       class="view-btn">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="user-cell">
+
+                                        <div class="table-avatar">
+                                            PS
+                                        </div>
+
+                                        <div>
+                                            <strong>Priya Shah</strong>
+                                            <span>priya@email.com</span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Software Engineer
+                                </td>
+
+
+                                <td>
+                                    FinTech Innovations
+                                </td>
+
+
+                                <td>
+
+                                    <span class="match-score medium">
+                                        76%
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    20 Sep 2026
+                                </td>
+
+
+                                <td>
+
+                                    <span class="status-badge review">
+                                        Under Review
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <a href="candidate-details.html"
+                                       class="view-btn">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="user-cell">
+
+                                        <div class="table-avatar">
+                                            VM
+                                        </div>
+
+                                        <div>
+                                            <strong>Vikram Mehta</strong>
+                                            <span>vikram@email.com</span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Backend Developer
+                                </td>
+
+
+                                <td>
+                                    Tech Solutions Pvt. Ltd.
+                                </td>
+
+
+                                <td>
+
+                                    <span class="match-score low">
+                                        61%
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    18 Sep 2026
+                                </td>
+
+
+                                <td>
+
+                                    <span class="status-badge rejected">
+                                        Rejected
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <a href="candidate-details.html"
+                                       class="view-btn">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="user-cell">
+
+                                        <div class="table-avatar">
+                                            RP
+                                        </div>
+
+                                        <div>
+                                            <strong>Riya Patel</strong>
+                                            <span>riya@email.com</span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Frontend Developer
+                                </td>
+
+
+                                <td>
+                                    Digital Works
+                                </td>
+
+
+                                <td>
+
+                                    <span class="match-score high">
+                                        81%
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    16 Sep 2026
+                                </td>
+
+
+                                <td>
+
+                                    <span class="status-badge interview">
+                                        Interview
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <a href="candidate-details.html"
+                                       class="view-btn">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- ================= PAGINATION ================= -->
+
+                <div class="pagination">
+
+                    <span>
+                        Showing 1–5 of 1,284 applications
+                    </span>
+
+                    <div class="page-buttons">
+
+                        <button disabled>
+                            ←
+                        </button>
+
+                        <button class="active">
+                            1
+                        </button>
+
+                        <button>
+                            2
+                        </button>
+
+                        <button>
+                            3
+                        </button>
+
+                        <button>
+                            4
+                        </button>
+
+                        <button>
+                            5
+                        </button>
+
+                        <button>
+                            →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

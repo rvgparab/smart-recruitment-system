@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartRecruit | Apply for Job</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-page">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="dashboard-logo">
+            <span>Smart</span>Recruit
+        </div>
+
+        <div class="sidebar-role">
+            Candidate Panel
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="candidate-dashboard.html" class="nav-item">
+                <span>📊</span>
+                Dashboard
+            </a>
+
+            <a href="browse-jobs.html" class="nav-item active">
+                <span>💼</span>
+                Browse Jobs
+            </a>
+
+            <a href="my-applications.html" class="nav-item">
+                <span>📄</span>
+                My Applications
+            </a>
+
+            <a href="candidate-profile.html" class="nav-item">
+                <span>👤</span>
+                My Profile
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="index.html" class="logout-link">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="dashboard-main">
+
+        <!-- BACK -->
+
+        <a href="job-details.html" class="job-back-link">
+            ← Back to Job Details
+        </a>
+
+
+        <!-- HEADER -->
+
+        <div class="dashboard-header">
+
+            <div>
+
+                <h1>Apply for Java Developer</h1>
+
+                <p class="dashboard-subtitle">
+                    Complete your application for Tech Solutions Pvt. Ltd.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= JOB SUMMARY ================= -->
+
+        <section class="application-job-summary">
+
+            <div class="application-job-icon">
+                💻
+            </div>
+
+            <div>
+
+                <h2>Java Developer</h2>
+
+                <p>
+                    Tech Solutions Pvt. Ltd.
+                </p>
+
+                <span>
+                    📍 Mumbai &nbsp; • &nbsp;
+                    💼 Full Time &nbsp; • &nbsp;
+                    💰 ₹6 - 9 LPA
+                </span>
+
+            </div>
+
+            <div class="application-match">
+
+                <small>
+                    Smart Match
+                </small>
+
+                <strong>
+                    92%
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= APPLICATION FORM ================= -->
+
+        <form
+            class="candidate-application-form"
+            action="my-applications.html">
+
+
+            <!-- PERSONAL INFORMATION -->
+
+            <section class="dashboard-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>Personal Information</h2>
+
+                        <p>
+                            Confirm your contact details
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-form">
+
+                    <div class="profile-field">
+
+                        <label>Full Name</label>
+
+                        <input
+                            type="text"
+                            value="Ananya Sharma"
+                            required>
+
+                    </div>
+
+
+                    <div class="profile-field">
+
+                        <label>Email Address</label>
+
+                        <input
+                            type="email"
+                            value="ananya@gmail.com"
+                            required>
+
+                    </div>
+
+
+                    <div class="profile-field">
+
+                        <label>Phone Number</label>
+
+                        <input
+                            type="tel"
+                            value="+91 98765 43210"
+                            required>
+
+                    </div>
+
+
+                    <div class="profile-field">
+
+                        <label>Location</label>
+
+                        <input
+                            type="text"
+                            placeholder="e.g. Mumbai, Maharashtra"
+                            required>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- EDUCATION -->
+
+            <section class="dashboard-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>Education</h2>
+
+                        <p>
+                            Add your latest educational qualification
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-form">
+
+                    <div class="profile-field">
+
+                        <label>Degree</label>
+
+                        <input
+                            type="text"
+                            value="B.E. Computer Engineering"
+                            required>
+
+                    </div>
+
+
+                    <div class="profile-field">
+
+                        <label>University / College</label>
+
+                        <input
+                            type="text"
+                            value="Mumbai University"
+                            required>
+
+                    </div>
+
+
+                    <div class="profile-field">
+
+                        <label>Graduation Year</label>
+
+                        <input
+                            type="number"
+                            value="2026"
+                            required>
+
+                    </div>
+
+
+                    <div class="profile-field">
+
+                        <label>CGPA / Percentage</label>
+
+                        <input
+                            type="text"
+                            placeholder="e.g. 8.5 CGPA">
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- EXPERIENCE -->
+
+            <section class="dashboard-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>Experience</h2>
+
+                        <p>
+                            Tell the recruiter about your experience
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-form">
+
+                    <div class="profile-field">
+
+                        <label>Job Title</label>
+
+                        <input
+                            type="text"
+                            placeholder="e.g. Software Development Intern">
+
+                    </div>
+
+
+                    <div class="profile-field">
+
+                        <label>Company</label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter company name">
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-field application-full-field">
+
+                    <label>Experience Description</label>
+
+                    <textarea
+                        rows="5"
+                        placeholder="Describe your previous work experience, responsibilities and achievements"></textarea>
+
+                </div>
+
+            </section>
+
+
+            <!-- SKILLS -->
+
+            <section class="dashboard-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>Skills</h2>
+
+                        <p>
+                            Add skills relevant to this position
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-field">
+
+                    <label>Your Skills</label>
+
+                    <input
+                        type="text"
+                        value="Java, SQL, HTML, CSS, JavaScript, Spring Boot, Git"
+                        placeholder="Enter skills separated by commas"
+                        required>
+
+                </div>
+
+            </section>
+
+
+            <!-- RESUME -->
+
+            <section class="dashboard-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>Resume</h2>
+
+                        <p>
+                            Upload your latest resume
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="resume-upload">
+
+                    <div class="resume-icon">
+                        📄
+                    </div>
+
+                    <div>
+
+                        <h3>Upload Resume</h3>
+
+                        <p>
+                            PDF, DOC or DOCX • Maximum 5 MB
+                        </p>
+
+                    </div>
+
+                    <label class="upload-btn">
+
+                        Choose File
+
+                        <input
+                            type="file"
+                            accept=".pdf,.doc,.docx"
+                            required>
+
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- COVER LETTER -->
+
+            <section class="dashboard-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>Cover Letter</h2>
+
+                        <p>
+                            Introduce yourself to the recruiter
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-field">
+
+                    <label>Cover Letter</label>
+
+                    <textarea
+                        rows="7"
+                        placeholder="Tell the recruiter why you are interested in this position and why you would be a good fit..."
+                        required></textarea>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONFIRMATION -->
+
+            <section class="application-confirmation">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        required>
+
+                    <span>
+                        I confirm that the information provided is accurate
+                        and I agree to the terms of application.
+                    </span>
+
+                </label>
+
+            </section>
+
+
+            <!-- ACTIONS -->
+
+            <div class="application-actions">
+
+                <a
+                    href="job-details.html"
+                    class="cancel-btn">
+
+                    Cancel
+
+                </a>
+
+                <button
+                    type="submit"
+                    class="submit-application-btn">
+
+                    Submit Application →
+
+                </button>
+
+            </div>
+
+
+        </form>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

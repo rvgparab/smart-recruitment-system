@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartRecruit | Interviews</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-page">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="dashboard-logo">
+            <span>Smart</span>Recruit
+        </div>
+
+        <div class="sidebar-role">
+            Recruiter Panel
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="recruiter-dashboard.html" class="nav-item">
+                <span>📊</span>
+                Dashboard
+            </a>
+
+            <a href="manage-jobs.html" class="nav-item">
+                <span>💼</span>
+                Manage Jobs
+            </a>
+
+            <a href="applications.html" class="nav-item">
+                <span>📄</span>
+                Applications
+            </a>
+
+            <a href="interviews.html" class="nav-item active">
+                <span>📅</span>
+                Interviews
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>👤</span>
+                Profile
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="index.html" class="logout-link">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="dashboard-main">
+
+        <!-- HEADER -->
+
+        <div class="dashboard-header">
+
+            <div>
+
+                <h1>Interviews</h1>
+
+                <p class="dashboard-subtitle">
+                    Schedule and manage candidate interviews
+                </p>
+
+            </div>
+
+            <button
+                class="add-job-btn"
+                onclick="document.getElementById('interview-form').style.display='block'">
+
+                + Schedule Interview
+
+            </button>
+
+        </div>
+
+
+        <!-- ================= SCHEDULE FORM ================= -->
+
+        <section
+            class="job-form-section"
+            id="interview-form"
+            style="display: none;">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Schedule New Interview</h2>
+
+                    <p>
+                        Add interview details for a candidate
+                    </p>
+                </div>
+
+            </div>
+
+
+            <form class="job-form">
+
+
+                <!-- CANDIDATE -->
+
+                <div class="form-row">
+
+                    <div class="input-group">
+
+                        <label>Candidate</label>
+
+                        <select required>
+
+                            <option value="">
+                                Select candidate
+                            </option>
+
+                            <option>
+                                Ananya Sharma
+                            </option>
+
+                            <option>
+                                Rahul Kumar
+                            </option>
+
+                            <option>
+                                Priya Shah
+                            </option>
+
+                            <option>
+                                Vikram Mehta
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- JOB -->
+
+                    <div class="input-group">
+
+                        <label>Job Position</label>
+
+                        <select required>
+
+                            <option value="">
+                                Select job
+                            </option>
+
+                            <option>
+                                Java Developer
+                            </option>
+
+                            <option>
+                                Web Developer
+                            </option>
+
+                            <option>
+                                Software Engineer
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DATE + TIME -->
+
+                <div class="form-row">
+
+                    <div class="input-group">
+
+                        <label>Interview Date</label>
+
+                        <input
+                            type="date"
+                            required>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Interview Time</label>
+
+                        <input
+                            type="time"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INTERVIEW TYPE + LOCATION -->
+
+                <div class="form-row">
+
+                    <div class="input-group">
+
+                        <label>Interview Type</label>
+
+                        <select required>
+
+                            <option value="">
+                                Select type
+                            </option>
+
+                            <option>
+                                Online
+                            </option>
+
+                            <option>
+                                In-Person
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Meeting Link / Location</label>
+
+                        <input
+                            type="text"
+                            placeholder="Google Meet link or office location">
+
+                    </div>
+
+                </div>
+
+
+                <!-- NOTES -->
+
+                <div class="input-group">
+
+                    <label>Interview Notes</label>
+
+                    <textarea
+                        rows="4"
+                        placeholder="Add interview instructions or notes"></textarea>
+
+                </div>
+
+
+                <!-- BUTTONS -->
+
+                <div class="job-form-actions">
+
+                    <button
+                        type="button"
+                        class="cancel-btn"
+                        onclick="document.getElementById('interview-form').style.display='none'">
+
+                        Cancel
+
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="add-job-btn">
+
+                        Schedule Interview
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon blue">
+                    📅
+                </div>
+
+                <div class="stat-info">
+
+                    <p>Upcoming</p>
+
+                    <h2>8</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon green">
+                    ✓
+                </div>
+
+                <div class="stat-info">
+
+                    <p>Completed</p>
+
+                    <h2>18</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon orange">
+                    ⏳
+                </div>
+
+                <div class="stat-info">
+
+                    <p>Pending Feedback</p>
+
+                    <h2>4</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon red">
+                    ✕
+                </div>
+
+                <div class="stat-info">
+
+                    <p>Cancelled</p>
+
+                    <h2>3</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= UPCOMING INTERVIEWS ================= -->
+
+        <section class="dashboard-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>Upcoming Interviews</h2>
+
+                    <p>
+                        Scheduled interviews with candidates
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="interview-table">
+
+
+                <!-- HEADER -->
+
+                <div class="table-row table-heading">
+
+                    <div>Candidate</div>
+                    <div>Position</div>
+                    <div>Date & Time</div>
+                    <div>Type</div>
+                    <div>Status</div>
+                    <div>Action</div>
+
+                </div>
+
+
+                <!-- INTERVIEW 1 -->
+
+                <div class="table-row">
+
+                    <div class="table-candidate">
+
+                        <div class="mini-avatar">
+                            AS
+                        </div>
+
+                        <div>
+                            <strong>Ananya Sharma</strong>
+                            <small>ananya@gmail.com</small>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        Java Developer
+                    </div>
+
+                    <div>
+                        03 Oct 2026<br>
+                        <small>10:30 AM</small>
+                    </div>
+
+                    <div>
+                        Online
+                    </div>
+
+                    <div>
+                        <span class="job-status active-job">
+                            Scheduled
+                        </span>
+                    </div>
+
+                    <div>
+
+                        <button class="view-btn">
+                            View
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INTERVIEW 2 -->
+
+                <div class="table-row">
+
+                    <div class="table-candidate">
+
+                        <div class="mini-avatar">
+                            RK
+                        </div>
+
+                        <div>
+                            <strong>Rahul Kumar</strong>
+                            <small>rahul@gmail.com</small>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        Web Developer
+                    </div>
+
+                    <div>
+                        04 Oct 2026<br>
+                        <small>12:00 PM</small>
+                    </div>
+
+                    <div>
+                        In-Person
+                    </div>
+
+                    <div>
+                        <span class="job-status active-job">
+                            Scheduled
+                        </span>
+                    </div>
+
+                    <div>
+
+                        <button class="view-btn">
+                            View
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INTERVIEW 3 -->
+
+                <div class="table-row">
+
+                    <div class="table-candidate">
+
+                        <div class="mini-avatar">
+                            PS
+                        </div>
+
+                        <div>
+                            <strong>Priya Shah</strong>
+                            <small>priya@gmail.com</small>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        Software Engineer
+                    </div>
+
+                    <div>
+                        05 Oct 2026<br>
+                        <small>03:30 PM</small>
+                    </div>
+
+                    <div>
+                        Online
+                    </div>
+
+                    <div>
+                        <span class="job-status active-job">
+                            Scheduled
+                        </span>
+                    </div>
+
+                    <div>
+
+                        <button class="view-btn">
+                            View
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INTERVIEW 4 -->
+
+                <div class="table-row">
+
+                    <div class="table-candidate">
+
+                        <div class="mini-avatar">
+                            VM
+                        </div>
+
+                        <div>
+                            <strong>Vikram Mehta</strong>
+                            <small>vikram@gmail.com</small>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        Backend Developer
+                    </div>
+
+                    <div>
+                        06 Oct 2026<br>
+                        <small>11:00 AM</small>
+                    </div>
+
+                    <div>
+                        Online
+                    </div>
+
+                    <div>
+                        <span class="job-status review">
+                            Pending
+                        </span>
+                    </div>
+
+                    <div>
+
+                        <button class="view-btn">
+                            View
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+</body>
+
+</html>
